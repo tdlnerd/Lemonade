@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{BC512B82-2AFC-4EFB-2EFA-A22685502370}") = "SpaceAid", "Assembly-CSharp-firstpass-vs.csproj", "{B377C98C-ABFD-3A9A-9541-D1ABA338834D}"
+EndProject
+Project("{BC512B82-2AFC-4EFB-2EFA-A22685502370}") = "SpaceAid", "Assembly-CSharp-Editor-vs.csproj", "{49269EE4-44A1-CA51-DA75-3EAD6BCDC19D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B377C98C-ABFD-3A9A-9541-D1ABA338834D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B377C98C-ABFD-3A9A-9541-D1ABA338834D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B377C98C-ABFD-3A9A-9541-D1ABA338834D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B377C98C-ABFD-3A9A-9541-D1ABA338834D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49269EE4-44A1-CA51-DA75-3EAD6BCDC19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49269EE4-44A1-CA51-DA75-3EAD6BCDC19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49269EE4-44A1-CA51-DA75-3EAD6BCDC19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49269EE4-44A1-CA51-DA75-3EAD6BCDC19D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+			GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+
+EndGlobal
