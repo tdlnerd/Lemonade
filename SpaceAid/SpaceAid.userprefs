@@ -1,11 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp-firstpass.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Day.js">
     <Files>
-      <File FileName="Assets/Day.js" Line="1" Column="1" />
-      <File FileName="Assets/CupChecker.js" Line="1" Column="1" />
-      <File FileName="Assets/Funds.js" Line="1" Column="1" />
-      <File FileName="Assets/PriceRounder.js" Line="1" Column="1" />
+      <File FileName="Assets/Day.js" Line="10" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

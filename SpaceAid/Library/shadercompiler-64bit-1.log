@@ -149,19 +149,3 @@ Cmd: preprocess
   insize=650 outsize=290 ok=1
 Cmd: preprocess
   insize=5006 outsize=866 ok=1
-Cmd: compileSnippet
-  api=0 type=0 insize=1228 outsize=819 kw= ok=1
-Cmd: compileSnippet
-  api=0 type=1 insize=1228 outsize=6 kw= ok=1
-Cmd: compileSnippet
-  api=0 type=0 insize=6892 outsize=2243 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=0 type=1 insize=6892 outsize=6 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=0 type=0 insize=3944 outsize=1467 kw=DIRECTIONAL ok=1
-Cmd: compileSnippet
-  api=0 type=1 insize=3944 outsize=6 kw=DIRECTIONAL ok=1
-Cmd: compileSnippet
-  api=0 type=0 insize=1021 outsize=780 kw= ok=1
-Cmd: compileSnippet
-  api=0 type=1 insize=1021 outsize=6 kw= ok=1
