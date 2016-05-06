@@ -1,10 +1,12 @@
 ﻿var Cost : PerCup;
 var Val : UI.Slider;
-var Funds = 200000;
+var Finance : Funds;
+var Counter : UI.Text;
 function Start () {
 
 }
 
 function Update () {
-	Val.maxValue = (Funds / Cost.TotalCost);
+	Val.maxValue = ((Finance.Total / Cost.TotalCost) - 1);
+	Counter.text = Val.value.ToString();
 }

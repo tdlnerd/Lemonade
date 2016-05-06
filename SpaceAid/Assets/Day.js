@@ -6,6 +6,7 @@ var Temp : int;
 var TempText : UI.Text;
 var Clock : UI.Text;
 var DayNumber = 0;
+var Profit : float;
 function Start () {
 NewDay();
 DayNumber += 1;
