@@ -2,7 +2,7 @@
 var DailyWeather : String;
 var WeatherIcon : UI.Image;
 var WeatherImages : Sprite[];
-var Temp : int;
+var Temp : float;
 var TempText : UI.Text;
 var Clock : UI.Text;
 var DayNumber = 0;
@@ -14,6 +14,8 @@ var MoneyMade : float;
 var Dollar : UI.Text;
 var Cent : UI.Text;
 var Amount : float;
+var Finances : Funds;
+var Expense : UI.Text;
 function Start () {
 NewDay();
 DayNumber += 1;
@@ -52,7 +54,20 @@ TempText.text = Temp.ToString() + "°";
 function Begin () {
 Debug.Log("Slider " + Cups.value);
 var FairPrice = ((Temp *2)/100);
+Debug.Log(FairPrice);
 var PriceCalc = float.Parse(Dollar.text) + (float.Parse(Cent.text) / 100);
-CupsSold = Amount * (Temp / 100);
+var TempCalc = Temp / 100;
+Debug.Log(TempCalc);
+CupsSold = Amount * (TempCalc) + ((FairPrice - PriceCalc) * 80000);
+if (CupsSold > Amount) {
+CupsSold = Amount;
+}
+if (CupsSold < 0) {
+CupsSold = 0;
+}
+Debug.Log(CupsSold);
 MoneyMade = PriceCalc * CupsSold;
+Debug.Log(MoneyMade);
+Finances.Total += MoneyMade - float.Parse(Expense.text);
+NewDay();
 }
