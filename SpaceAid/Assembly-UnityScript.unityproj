@@ -53,6 +53,7 @@
      <Compile Include="Assets\PerCup.js" />
      <Compile Include="Assets\PriceRounder.js" />
      <Compile Include="Assets\ProductionCost.js" />
+     <Compile Include="Assets\Rating.js" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />

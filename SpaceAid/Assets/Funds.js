@@ -1,4 +1,4 @@
-﻿var Total = 200000; 
+﻿var Total = 10000; 
 
 function Start () {
 

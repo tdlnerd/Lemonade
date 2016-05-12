@@ -16,6 +16,10 @@ var Cent : UI.Text;
 var Amount : float;
 var Finances : Funds;
 var Expense : UI.Text;
+var FairPrice : float;
+var PriceCalc : float;
+var Score : Rating;
+var Rain = false;
 function Start () {
 NewDay();
 DayNumber += 1;
@@ -47,15 +51,16 @@ Temp = Random.Range(95,100);
 }
 if (Choice == 0) {
 Temp = Random.Range(60,80);
+Rain = true;
 }
 TempText.text = Temp.ToString() + "°";
 }
 
 function Begin () {
 Debug.Log("Slider " + Cups.value);
-var FairPrice = ((Temp *2)/100);
+FairPrice = ((Temp *2)/100);
 Debug.Log(FairPrice);
-var PriceCalc = float.Parse(Dollar.text) + (float.Parse(Cent.text) / 100);
+PriceCalc = float.Parse(Dollar.text) + (float.Parse(Cent.text) / 100);
 var TempCalc = Temp / 100;
 Debug.Log(TempCalc);
 CupsSold = Amount * (TempCalc) + ((FairPrice - PriceCalc) * 80000);
@@ -65,9 +70,14 @@ CupsSold = Amount;
 if (CupsSold < 0) {
 CupsSold = 0;
 }
+if (Rain == true) {
+CupsSold = (CupsSold / Random.Range(4,8));
+}
 Debug.Log(CupsSold);
 MoneyMade = PriceCalc * CupsSold;
 Debug.Log(MoneyMade);
 Finances.Total += MoneyMade - float.Parse(Expense.text);
 NewDay();
+Score.ChangeRating();
+Rain = false;
 }
