@@ -1,11 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp-firstpass.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Funds.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AdCost.js">
     <Files>
-      <File FileName="Assets/Day.js" Line="76" Column="1" />
-      <File FileName="Assets/Funds.js" Line="1" Column="18" />
+      <File FileName="Assets/Day.js" Line="23" Column="1" />
+      <File FileName="Assets/Funds.js" Line="1" Column="1" />
       <File FileName="Assets/PerCup.js" Line="1" Column="1" />
-      <File FileName="Assets/Rating.js" Line="9" Column="37" />
+      <File FileName="Assets/Rating.js" Line="1" Column="1" />
+      <File FileName="Assets/ProductionCost.js" Line="1" Column="1" />
+      <File FileName="Assets/AdCost.js" Line="11" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -20,10 +20,11 @@ var FairPrice : float;
 var PriceCalc : float;
 var Score : Rating;
 var Rain = false;
+var AdDollar : UI.Text;
+var AdCent : UI.Text;
+var DateTxt : UI.Text;
 function Start () {
 NewDay();
-DayNumber += 1;
-Clock.text = "6/"+DayNumber.ToString()+"/2094";
 }
 
 function Update () {
@@ -31,6 +32,8 @@ Amount = Cups.value;
 }
 
 function NewDay() {
+DayNumber += 1;
+Clock.text = "6/"+DayNumber.ToString()+"/2094";
 WeatherPanel(Random.Range(0,5));
 }
 
@@ -60,10 +63,12 @@ function Begin () {
 Debug.Log("Slider " + Cups.value);
 FairPrice = ((Temp *2)/100);
 Debug.Log(FairPrice);
-PriceCalc = float.Parse(Dollar.text) + (float.Parse(Cent.text) / 100);
+PriceCalc = float.Parse(Dollar.text) + (float.Parse(Cent.text));
+var AdCalc = float.Parse(AdDollar.text) + (float.Parse(AdCent.text));
 var TempCalc = Temp / 100;
 Debug.Log(TempCalc);
-CupsSold = Amount * (TempCalc) + ((FairPrice - PriceCalc) * 80000);
+
+CupsSold = Amount * (TempCalc) + ((FairPrice - PriceCalc)) + (AdCalc * 100);
 if (CupsSold > Amount) {
 CupsSold = Amount;
 }
